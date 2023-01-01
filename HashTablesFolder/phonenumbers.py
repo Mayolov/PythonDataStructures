@@ -1,4 +1,4 @@
-from BasicHashTable import BasicHashTable
+from ProbingHashTable import ProbingHashTable
 
 phone_numbers = {
     'Aakash' : '9489484949',
@@ -12,14 +12,14 @@ phone_numbers['Vishal'] = ' 8787878787'
 # view the dictionary
 print(phone_numbers)
 
-hashtable = BasicHashTable()
+hashtable = ProbingHashTable()
 
 hashtable.insert("new","table")
 hashtable.insert("tank","shit")
 hashtable.insert("arbies",123)
+hashtable.insert("sarbie",321)
 
-
-a = hashtable.find("arbies")
-b = hashtable.get_index("tank")
+a = hashtable.find("sarbie")
+b = hashtable.find("arbies")
 print(a)
 print(b)
